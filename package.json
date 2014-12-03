@@ -1,0 +1,47 @@
+{
+  "name": "express-bem-enb-make",
+  "version": "0.1.0",
+  "description": "bem engines middleware to build bundles on render with enb",
+  "main": "lib/index.js",
+  "scripts": {
+    "install-test-deps": "cd test/data/testing-project && npm i",
+    "lint": "jshint lib test && jscs lib test",
+    "test": "npm run install-test-deps && npm run lint && mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/express-bem/enb-make.git"
+  },
+  "keywords": [
+    "express-bem",
+    "enb",
+    "make",
+    "server",
+    "middleware"
+  ],
+  "author": "Alexej Yaroshevich <zxqfox@gmail.com> (http://github.com/zxqfox)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/express-bem/enb-make/issues"
+  },
+  "homepage": "https://github.com/express-bem/enb-make",
+  "dependencies": {
+    "enb": ">= 0.13.9"
+  },
+  "peerDependencies": {
+    "express-bem": ">= 0.2.1 < 1.0.0"
+  },
+  "devDependencies": {
+    "express": ">= 3.0",
+    "express-bem": ">= 0.2.1",
+    "express-bem-bh": ">= 0.1.0",
+    "jscs": "^1.5.9",
+    "jshint": "^2.5.4",
+    "mocha": "*",
+    "request": "*"
+  },
+  "files": [
+    "lib",
+    "LICENSE"
+  ]
+}

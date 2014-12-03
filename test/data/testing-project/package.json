@@ -1,0 +1,16 @@
+{
+  "author": "Alexej Yaroshevich",
+  "name": "testing",
+  "email": "alex@qfox.ru",
+  "version": "0.0.0",
+  "engines": {
+    "node": ">=0.10"
+  },
+  "dependencies": {
+    "enb": "0.13.9",
+    "bh": "3.2.2",
+    "enb-bh": "0.4.0",
+    "enb-bem-techs": "1.0.0-rc"
+  },
+  "private": true
+}
