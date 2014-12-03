@@ -8,7 +8,25 @@ describe('view render middlewares', function () {
     }, before, after);
 
     it('should call enb.make on render', function (done) {
-        this.timeout(15000);
+        this.timeout(1000);
+
+        // debugger;
+        env.app.bem.use(middleware, {noLog: true});
+
+        env.case(this.test.title, function (req, res) {
+            global.loadBemjson(bemjsonFile, function (err, bemjson) {
+                res.render('index', {bemjson: bemjson});
+            });
+
+        }, function (error, response, body) {
+            ASSERT(body.indexOf('<!DOCTYPE') === 0);
+            done();
+        });
+
+    });
+
+    it('should render the same one more time', function (done) {
+        this.timeout(1000);
 
         // debugger;
         env.app.bem.use(middleware, {noLog: true});
