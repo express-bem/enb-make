@@ -1,6 +1,6 @@
 {
   "name": "express-bem-enb-make",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "bem engines middleware to build bundles on render with enb",
   "main": "lib/index.js",
   "scripts": {
