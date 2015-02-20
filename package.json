@@ -28,9 +28,6 @@
   "dependencies": {
     "enb": ">= 0.13.9"
   },
-  "peerDependencies": {
-    "express-bem": ">= 0.2.1 < 1.0.0"
-  },
   "devDependencies": {
     "express": ">= 3.0",
     "express-bem": ">= 0.2.1",
